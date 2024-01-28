@@ -1,0 +1,20 @@
+.gray {
+	background-color: gray;
+	color: white;
+}
+.purple {
+	color: purple;
+}
+.red {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+.block {
+	width: 300px;
+	background-color: rgb(230, 15, 230);
+}
+.block span {
+	color: white;
+	background-color: blueviolet;
+}
