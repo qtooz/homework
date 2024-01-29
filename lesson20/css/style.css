@@ -1,0 +1,19 @@
+.nav__header {
+	background-color: rgb(255, 155, 16);
+	height: 60px;
+}
+
+.nav__list {
+	display: flex;
+}
+
+.nav__list li {
+	margin-right: 20px;
+}
+
+.footer__link {
+	margin-top: 20px;
+	height: 300px;
+	background-color: blueviolet;
+	color: aliceblue;
+}
