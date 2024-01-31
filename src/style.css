@@ -216,15 +216,10 @@ body.overflow {
 }
 
 .content__list {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	gap: 20px;
+	align-content: flex-start ;
+	flex-flow: column wrap;
+	gap: 5px;
 }
 
 
