@@ -71,6 +71,10 @@ body {
 	color: #1d6fb6;
 	;
 }
+.title__button:hover {
+	background-color: #1d6fb6;
+	color: white;
+	transition: transform 0.3s;
 
 /* ================================================================= */
 .cards {
