@@ -216,10 +216,11 @@ body.overflow {
 }
 
 .content__list {
-	display: flex;
+/* 	display: flex;
 	align-content: flex-start ;
 	flex-flow: column wrap;
-	gap: 5px;
+	gap: 5px; */
+	display: inline-block;
 }
 
 
