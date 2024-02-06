@@ -6,11 +6,11 @@ body {
 .sidebar {
 	display: flex;
 	background-color: rgb(184, 207, 207);
-	height: 100px;
-	width: 45vw;
 	position: fixed;
-	bottom: 15%;
-	right: 5%;
+	height: 100px;
+	left: 50vw;
+	bottom: 100px;
+	right: 50px;
 }
 
 .circle {
@@ -19,6 +19,6 @@ body {
 	width: 100px;
 	height: 100px;
 	position: relative;
-	top: -40%;
+	bottom: 50%;
 	right: -15%;
 }
