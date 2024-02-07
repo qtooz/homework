@@ -1,0 +1,38 @@
+body {
+	background: black;
+}
+
+.wrapper {
+	width: 150px;
+	height: 150px;
+	background: gray;
+	border-radius: 15px;
+	margin: 20% auto;
+	text-align: center;
+}
+
+.title {
+	color: greenyellow;
+	transform: translateY(50px);
+	opacity: 0;
+	transition-delay: 3s;
+	transition-duration: 0.3s;
+}
+
+
+.loading {
+	transform: translate(-200px, -110px);
+	background: white;
+	width: 0.1px;
+	transition-duration: 3s;
+}
+
+
+.wrapper:hover>.loading {
+	height: 32px;
+	width: 564px;
+}
+
+.wrapper:hover> .title {
+	opacity: 1;
+}
