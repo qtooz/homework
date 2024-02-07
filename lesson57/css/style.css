@@ -1,0 +1,36 @@
+body {
+	background: gray;
+}
+
+.title {
+	position: relative;
+}
+
+.title__item {
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	margin-top: 30px;
+
+}
+
+.title__item::before {
+	content: '';
+	position: absolute;
+	border-radius: 100%;
+	border: 2px solid white;
+	width: 32px;
+	height: 32px;
+	background: red;
+	transform: translate(-50px,0px);
+}
+.title__item::after {
+	content: '';
+	position: absolute;
+	border-radius: 100%;
+	border: 2px solid white;
+	width: 32px;
+	height: 32px;
+	background: blue;
+	transform: translate(18px,0px);
+}
