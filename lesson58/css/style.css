@@ -29,7 +29,6 @@ body {
 
 
 .wrapper:hover>.loading {
-	height: 32px;
 	width: 564px;
 }
 
