@@ -1,0 +1,217 @@
+:root {
+	--accent-1: rgb(255, 165, 92);
+	--accent-2: rgb(206, 170, 208);
+	--title: rgb(31, 23, 17);
+	--text: rgb(49, 44, 39);
+	--bgn-1: rgb(255, 224, 203);
+	--bgn-2: rgb(255, 249, 244);
+	--purple: rgb(112, 65, 116);
+	--disabled: rgb(225, 217, 225);
+	--input: rgb(172, 144, 122);
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 5vw;
+}
+
+.body {
+	font-family: "Montserrat", "Ariel", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 400;
+	background: var(--bgn-2);
+}
+
+.body--opened-menu {
+	overflow: hidden;
+}
+
+.body--opened-modal {
+	overflow: hidden;
+}
+
+.wrapper {
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.main__gallery,
+.main__testimonials {
+	margin-bottom: 140px;
+}
+
+.container {
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0 15px;
+	height: 100%;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1;
+	font-weight: 500;
+	background-color: var(--accent-1);
+	border-radius: 60px;
+	height: 62px;
+	margin-top: 40px;
+	color: var(--text);
+	padding: 3px 15px;
+	width: 100%;
+	transition: all 0.4s;
+}
+
+.button:hover {
+	background-color: rgb(255, 145, 56);
+}
+
+h1 {
+	font-family: "Gabriola";
+	font-size: 74px;
+	font-weight: 400;
+	line-height: 0.82;
+}
+
+.header {
+	background: url("../images/decor/bg-header.png") 50% 100% / cover no-repeat;
+}
+
+.modal {
+	position: fixed;
+	inset: 0;
+	background: #00000071;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .6s;
+}
+
+.body--opened-modal .modal {
+	opacity: 1;
+	visibility: visible;
+
+}
+
+.modal__window {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background: var(--bgn-2);
+	max-width: 428px;
+	padding: 133px 60px 60px 60px;
+	border-radius: 20px;
+}
+
+.modal__cancel {
+	position: absolute;
+	display: flex;
+	font-size: 16px;
+	border: 2px solid rgb(225, 217, 225);
+	top: 5%;
+	right: 5%;
+	color: rgb(225, 217, 225);
+	border-radius: 100%;
+	flex-shrink: 0;
+	flex-grow: 1;
+	box-sizing: border-box;
+	width: 24px;
+	height: 24px;
+	align-items: center;
+	justify-content: center;
+	transition: all .4s
+}
+
+.modal__cancel:hover {
+	color: rgb(172, 144, 122);
+	border: 2px solid rgb(172, 144, 122);
+}
+
+
+
+.modal__img {
+	position: absolute;
+	top: -15%;
+	left: 19%;
+}
+
+.modal__title {
+	color: var(--title);
+	font-family: "Gabriola";
+	font-size: 42px;
+	font-weight: 400;
+	line-height: 0.90;
+	letter-spacing: 0%;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.modal__text {
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+
+.modal__form-label {
+	position: relative;
+}
+
+.modal__form-label span {
+	position: absolute;
+	font-size: 11px;
+	color: var(--input);
+	top: -16px;
+	left: 28px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .4s;
+}
+
+.modal__form-input {
+	box-sizing: border-box;
+	border: 1px solid rgb(172, 144, 122);
+	border-radius: 100px;
+	padding: 19px 28px 19px 28px;
+	width: 100%;
+	font-size: 16px;
+	transition: all .4s;
+}
+
+.modal__form-input:hover {
+	border: 1px solid var(--accent-1);
+}
+
+.modal__form-input::placeholder {
+	color: rgb(172, 144, 122);
+	transition: all .4s;
+}
+
+.modal__form-input:hover::placeholder {
+	color: var(--accent-1);
+}
+
+.modal__form-input:focus {
+	padding: 26px 28px 12px 28px;
+}
+
+.modal__form-input:focus+span {
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal__button {
+	font-size: 16px;
+	margin-top: 10px;
+}
