@@ -1,0 +1,117 @@
+:root {
+	--main-colors-purple: #ca6aeb;
+	--main-colors-blue: #19b5f1;
+	--greyscale-black-100: #18181b;
+	--greyscale-black-80: #252532;
+	--greyscale-grey-1: #b0b0b2;
+	--greyscale-grey-2: #d1d1d1;
+	--greyscale-white: #fff;
+	--alerts-success: #00c566;
+	--alerts-error: #ff4747;
+	--alerts-warning: #facc15;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 5vw;
+}
+
+body {
+	font-family: "Chakra Petch", sans-serif;
+	font-size: 16px;
+	line-height: 1.75;
+	font-weight: 400;
+	background: var(--greyscale-black-100);
+	color: white;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1350px;
+	margin: 0 auto;
+	padding: 0 15px;
+	height: 100%;
+}
+
+.title {
+	font-family: "Chakra Petch";
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 1.20833;
+	letter-spacing: -0.01em;
+	color: var(--greyscale-white);
+}
+
+.backgraund__image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -11;
+
+}
+
+.hero {
+	padding-bottom: 120px;
+}
+
+.about {
+	padding-bottom: 150px;
+}
+
+.trust {
+	padding-bottom: 250px;
+}
+
+.started,
+.testimonial {
+	padding-bottom: 100px;
+}
+
+.gallery {
+	padding-bottom: 230px;
+
+}
+.footer {
+	padding-bottom: 40px;
+}
+
+.button {
+	background: transparent;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: 0.11em;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--greyscale-white);
+	padding: 18px 38px;
+	background: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+	position: relative;
+	margin-bottom: 42px;
+
+}
+
+
+
+.button::before {
+	content: "";
+	position: absolute;
+	inset: -3px;
+	z-index: -1;
+	background: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+	filter: blur(10px);
+	opacity: 0;
+	transition: all 0.4s;
+}
+
+.button:hover::before {
+	opacity: 1;
+}
